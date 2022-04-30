@@ -1,0 +1,291 @@
+
+  body{
+    margin: 0 ;
+    background-color: #D9D2E0;
+    line-height: normal;
+  }
+
+ 
+  @media (max-width: 500px) {
+    body {
+      font-size: 14px;
+      margin: 0;
+    }
+}
+
+
+/*---------------------- Header ---------------------- */
+
+/*Logo*/
+  #nome{
+    font-family: "hugh is life personal use", Arial ;
+    font-size: 5em;
+  }
+
+  @media (max-width: 500px) {
+    #nome {
+      font-size: 3em;
+    }
+  }
+
+
+  /*Scritta*/
+  h1{
+    font-size: 2em;       
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+    
+
+  
+  header nav {
+    position: absolute;  /*Oggetto Assoluto Relativo*/
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header{
+    background: url(https://i.pinimg.com/originals/50/7f/c9/507fc9a6e8b8b7745f64029bd391b97c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  @media (max-width: 500px) {
+    header{
+      height: 400px;
+    }
+  }
+
+/*Overlay*/
+  header::before {
+    content: '';        
+    position: absolute;  
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+/* Header - Generale*/
+header{
+  font-size: 20px;
+  color:black;
+  font-style: normal;
+  font-weight: 400; 
+}
+
+
+
+
+
+
+ /*---------------------- Section ----------------------*/
+
+
+/*Contiene gli articoli per una determinata categoria*/ 
+  .contenitore{
+    display:flex;
+    justify-content: center;
+  }
+
+
+
+/*Tasto "Aggiungi aal carrello"*/
+ .submit{
+    font-size: small;
+    background-color: #ff1552;
+    color: #fff;
+    border-radius: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-family: "Comic Neue",Arial;
+    border: 0;
+  }
+
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form h1{
+    font-size:35px;
+  }
+
+  .submit:hover{
+    background-color: #fff;
+    color: #ff1552;
+  }
+
+
+
+  #album-view{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+  }
+
+  #album-view div{
+    margin: 10px;
+    border: 1px solid slategray;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 230px;  
+    max-height: 230px; 
+    display: flex;
+    flex-direction:column;
+    cursor: pointer;
+    background-color: white; 
+  }
+
+  div img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+
+  }
+
+
+/*Section Generale*/
+section{
+  font-size: 10px;
+  color:black;
+  font-style: normal;
+  font-weight: 400; 
+  margin-top: 110px;
+  margin-bottom: 110px;
+  
+}
+  
+
+
+
+/*----------------------Footer----------------------*/
+
+/*Contenitore Footer*/
+  #fot{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items:flex-start;
+  }
+
+/*Logo*/
+  #fot #nome {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+  
+  @media (max-width: 500px) {
+    #fot #nome{
+      font-size: 25px;
+      padding-bottom: 40px;
+    }
+  }
+
+/*Social*/
+  .social{
+    margin-top: 30px;
+  }
+
+
+  @media (max-width: 500px) {
+    .social{
+      font-size: 9px;
+      padding-top: 5px;
+      margin-bottom: 5px;
+   }
+ }
+ 
+/*Contenitori Categorie*/
+  #menù, #informazioni, #account  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+  }
+
+/*Titoli Categorie*/
+  #informazioni h1, #account h1, #menù h1{
+    color: rgba(255, 255, 255, .5);
+  
+  }
+
+  @media (max-width: 500px) {
+    #informazioni h1, #account h1, #menù h1{
+      font-size: 12px;
+   }
+ }
+
+/*Elementi Delle Categorie*/
+  #menù a, #informazioni a, #account a{
+   margin: 10px;
+  }
+
+  @media (max-width: 500px) {
+    #menù a, #informazioni a, #account a{
+      font-size: 8px;
+      margin: 3px;
+   }
+ }
+
+  #informazioni a:hover, #menù a:hover, #account a:hover{
+    color: #ff1552;
+  }
+
+/*Powered By...*/
+  footer p {
+    color: rgba(255, 255, 255, .4);
+    border-top: 1px solid;
+    padding: 5px;
+    margin: 0;
+  }
+
+/*Footer - Generale*/
+  footer {
+    background-color: rgb(27, 27, 27);
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400; 
+  }
+
+
+
+
+
+/*Body - Generale*/
+  a{
+    cursor: pointer;
+  }
+
+  a:hover{
+    color: #ff1552;
+  }
+
